@@ -1,0 +1,13 @@
+<sly data-sly-test="${wcmmode.edit}">
+    <p align="center" style="color:red; padding: 10px;">Configure the Learning Component</p>
+</sly>
+
+<sly data-sly-test.title = "${properties.learningTitle}"></sly>
+<sly data-sly-test.description = "${properties.learningDescription}"></sly>
+<sly data-sly-test.number = "${properties.learningNumber}"></sly>
+
+<div data-sly-use.actualcode="implementation.html">
+    <div data-sly-call="${actualcode.learning @ firstVar=title, secondVar=description, thirdVar=number}">
+    </div>
+
+</div>
